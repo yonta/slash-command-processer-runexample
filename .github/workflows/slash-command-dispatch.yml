@@ -10,7 +10,9 @@ jobs:
         uses: peter-evans/slash-command-dispatch@v2
         with:
           token: ${{ secrets.PAT }}
-          commands: example
+          commands: |
+            example
+            fix
           repository: yonta/slash-command-processor
 
       - name: Say Hello
