@@ -12,3 +12,8 @@ jobs:
           token: ${{ secrets.PAT }}
           commands: example
           repository: yonta/slash-command-processor
+
+      - name: Say Hello
+        run: |
+          echo "Hello"
+          echo "This is message from bot."
