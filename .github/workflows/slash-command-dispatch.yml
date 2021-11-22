@@ -17,3 +17,9 @@ jobs:
         run: |
           echo "Hello"
           echo "This is message from bot."
+
+      - uses: actions/checkout@v2
+
+      - name: Run script
+        run: |
+          ./script.sh
